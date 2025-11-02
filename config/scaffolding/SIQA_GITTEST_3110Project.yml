@@ -26,7 +26,7 @@ packages:
   gitUsername: manoj-jannu-IBM
   gitBranch: main
 services:
-- serviceName: project.siqa_gittest_3110.integrations:Call_TPPService
+- serviceName: project.siqa_gittest_3110.integrations:Test_ConnList
   packages:
   - name: SIQA_GITTEST_3110Project
     version: "1.0"
@@ -42,14 +42,46 @@ services:
     version: 10.7.0.0.66
   - name: SIQACloudStreamsTests
     version: "1.0"
-- serviceName: services:add3Ints
+- serviceName: SIQACloudStreamsTests:connetorOperations
   packages:
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.66
+- serviceName: SIQACloudStreamsTests:createAccountConnectorService
+  packages:
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.66
+- serviceName: SIQACloudStreamsTests:retrieveAccountConnectorService
+  packages:
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.66
+- serviceName: SIQACloudStreamsTests:deleteAccountConnectorService
+  packages:
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.66
+- serviceName: project.siqa_gittest_3110.integrations:Test_ConnListing
+  packages:
+  - name: SIQA_GITTEST_3110Project
+    version: "1.0"
   - name: TPP_services_in_FCS
     version: "1.0"
-- serviceName: pub.math:addInts
-  packages:
-  - name: WmPublic
-    version: 11.1.0.0.2092
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.66
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 - serviceName: project.siqa_gittest_3110.integrations:Test_RestConnector
   packages:
   - name: SIQA_GITTEST_3110Project
